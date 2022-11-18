@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 public class TC_001_CreateLead extends GenericWrapper {
 
 	@Test
-	public static void main(String[] args) {
-		launchBrowser("http://leaftaps.com/opentaps/control/main");
+	public  void createLead() throws InterruptedException {
+		launchBrowser("http://leaftaps.com/opentaps");
         enterById("username","DemoSalesManager");
         enterById("username", "crmsfa");
         enterByXPath("//input[@value='login']");
@@ -18,7 +18,7 @@ public class TC_001_CreateLead extends GenericWrapper {
         enterById("createLeadForm_FirstName","Hema");
         enterById("createLeadForm_LastName","M");
         enterById("createLeadForm_firstNmaeLocal","Hema");
-        enterByXPath("//input[@name='createLeadForm_firstNmaeLocal']","Ma");
+        enterByXPath("//input[@name='createLeadForm_firstNameLocal']","Ma");
         enterByXPath("//input[@name='personalTitle']","Ms");
         enterByVisibleTextId("createLeadForm_dataSourceId","website");
         enterByXPath("//input[@name='generalRevenue']","1000");
