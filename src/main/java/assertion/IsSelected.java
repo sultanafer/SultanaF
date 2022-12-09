@@ -9,13 +9,17 @@ public class IsSelected {
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("https://secure.bankofamerica.com/login/sign-in/signOnV2Screen.go");
 		//boolean checked = driver.findElementByxPath("//input[@ class="cs-remID"]").isSelected();
-		boolean checked=driver.findElementByXPath("//input[@ class='cs-remID']").isSelected();
-		if (checked==true) {
+		//boolean checked=driver.findElementByXPath("//input[@ class='cs-remID']").isSelected();
+		boolean selected = driver.findElementById("remID").isSelected();
+	
+		
+		if (selected==true) {
 			System.out.println("is fine");
 		} else {
 			System.out.println("is not right");
+			//selected.click();
 		}
-	driver.quit();
+	//driver.quit();
 	}
 
 	

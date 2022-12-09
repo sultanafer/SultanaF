@@ -23,7 +23,9 @@ public class Simple_Alert {
 
 		//switch control to Alert from HTML page and get the Alert text
 		String simpleAlert = driver.switchTo().alert().getText();
+		
 		System.out.println(simpleAlert);
+	
 
 		//String simpleAlert	= driver.switchTo().alert().getText();
 		//System.out.println(simpleAlert);

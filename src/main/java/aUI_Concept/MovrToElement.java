@@ -28,7 +28,7 @@ public class MovrToElement {
 		driver.get("http://leaftaps.com/opentaps");
 
 		// Enter Username - (Element level)
-		//driver.findElementById("username").sendKeys("DemoSalesManager");
+		//driver.findElementById("username").sendKeys("DemoCSR");
 		driver.findElementByXPath("//input[@id='username']").sendKeys("DemoSalesManager");
 		//String cssValue = driver.findElementById("username").getCssValue("id");
 		//System.out.println(cssValue);

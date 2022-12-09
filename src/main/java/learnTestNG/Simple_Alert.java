@@ -5,11 +5,14 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+
+
 public class Simple_Alert {
 
 	//public static void main(String[] args) throws InterruptedException {
 	
 	@Test
+	
 	public void simpleAlert() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		//Create object of ChromeDriver Class
